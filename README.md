@@ -1,36 +1,39 @@
 # Bank of Baroda Candlestick Dashboard
 
-An interactive stock market visualization project built with `Python`, `Pandas`, and `Plotly` to explore Bank of Baroda price movement through a candlestick chart.
+Interactive stock market visualization project built with `Python`, `Pandas`, and `Plotly` to analyze Bank of Baroda price movement through a clean candlestick dashboard.
 
-This project takes raw OHLCV stock data, cleans it, transforms the date series, and turns it into a clean interactive dashboard-style chart that can be viewed directly in Jupyter Notebook or exported as HTML for sharing.
+This project transforms raw OHLCV stock data into an interactive financial chart that can be explored in Jupyter Notebook and shared as a standalone HTML file.
 
-## Why This Project Stands Out
+## Highlights
 
-- Converts raw market data into an interactive candlestick visualization
-- Uses a clean notebook workflow that is easy to understand and reproduce
-- Exports the final chart as a standalone HTML file
-- Shows practical use of data cleaning, preprocessing, and visual storytelling
+- Interactive candlestick dashboard for Bank of Baroda stock data
+- Clean preprocessing pipeline for date and OHLCV values
+- Notebook-based workflow that is easy to follow and reproduce
+- Export-ready HTML chart for browser viewing and portfolio sharing
 
-## Project Preview
+## Preview
 
-The final output is an interactive candlestick chart saved as:
+![Bank of Baroda chart preview](assets/bankbaroda-preview.png)
 
-- `bank_baroda_candlestick.html`
+The live interactive output is exported as:
 
-It visualizes:
+- `bankbaroda_candlestick_dashboard.html`
 
-- open price
-- high price
-- low price
-- close price
-- time-based stock movement for Bank of Baroda
+## Key Features
+
+- Reads raw stock market data from CSV
+- Cleans date, price, and volume fields using Pandas
+- Builds an interactive Plotly candlestick visualization
+- Exports the final chart as a shareable HTML dashboard
+- Demonstrates a simple and practical time-series analysis workflow
 
 ## Project Structure
 
-- `index.ipynb` - main notebook containing the full project workflow
-- `StockDataBANKBARODA_1.csv` - source stock dataset
-- `bank_baroda_candlestick.html` - exported interactive Plotly chart
-- `requirements.txt` - Python dependencies
+- `index.ipynb` - main notebook containing the complete workflow
+- `bankbaroda_stock_data.csv` - source stock dataset
+- `bankbaroda_candlestick_dashboard.html` - exported interactive Plotly chart
+- `requirements.txt` - project dependencies
+- `assets/bankbaroda-preview.png` - static preview image for the README
 
 ## Tech Stack
 
@@ -42,12 +45,10 @@ It visualizes:
 ## Workflow
 
 1. Import the required libraries.
-2. Load the stock market CSV file.
-3. Clean and preprocess the dataset.
-4. Convert the date column into datetime format.
-5. Prepare OHLC values for charting.
-6. Build the candlestick chart with Plotly.
-7. Export the chart as an interactive HTML file.
+2. Load the Bank of Baroda stock dataset.
+3. Clean and preprocess the date and OHLCV columns.
+4. Build the candlestick chart with Plotly.
+5. Export the chart as an interactive HTML file.
 
 ## Run Locally
 
@@ -57,29 +58,37 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Launch the notebook:
+Open the notebook:
 
 ```bash
 jupyter notebook index.ipynb
 ```
 
-Run all notebook cells to regenerate the visualization.
+Run all cells to regenerate the visualization and HTML export.
 
-## Learning Highlights
-
-This project demonstrates:
+## What This Project Demonstrates
 
 - working with real stock market data
 - cleaning and transforming time-series datasets
 - building financial visualizations with Plotly
-- exporting notebook results into shareable interactive output
+- turning notebook output into a portfolio-ready deliverable
 
 ## Future Improvements
 
-- add moving averages and technical indicators
-- include volume charts below the candlestick plot
+- add moving averages and other technical indicators
+- include a volume subplot below the candlestick chart
 - support multiple stocks from different CSV files
-- turn the notebook into a full Streamlit or Dash app
+- convert the notebook into a Streamlit or Dash application
+
+## Author
+
+**Anuj Ojha**
+
+- GitHub: [Anuj7411](https://github.com/Anuj7411)
+
+## Pin This Repo
+
+If you want this project to stand out on your GitHub profile, pin it from your profile page so recruiters and visitors see it first.
 
 ## Disclaimer
 
@@ -87,4 +96,4 @@ This project is for educational and portfolio purposes only. It is not financial
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
